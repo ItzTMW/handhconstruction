@@ -2,6 +2,9 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 
 import appCss from "../styles.css?url";
 
+const siteDescription =
+  "Home Improvement New York 📍 ☞ Free estimates ☞ Licensed ☞ Remodeling & renovations ☞ Residential & commercial";
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -30,30 +33,15 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "K&H Construction" },
-      { name: "description", content: "Home Improvement
-New York 📍
-☞Free estimates
-☞ Licensed
-☞ Remodeling & renovations
-☞ Residential & commercial" },
+      { name: "description", content: siteDescription },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "K&H Construction" },
-      { property: "og:description", content: "Home Improvement
-New York 📍
-☞Free estimates
-☞ Licensed
-☞ Remodeling & renovations
-☞ Residential & commercial" },
+      { property: "og:description", content: siteDescription },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "K&H Construction" },
-      { name: "twitter:description", content: "Home Improvement
-New York 📍
-☞Free estimates
-☞ Licensed
-☞ Remodeling & renovations
-☞ Residential & commercial" },
+      { name: "twitter:description", content: siteDescription },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/1f6251e6-7766-4225-b67f-5c64fe260eb2" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/1f6251e6-7766-4225-b67f-5c64fe260eb2" },
     ],
