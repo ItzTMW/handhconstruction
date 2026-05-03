@@ -29,14 +29,33 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "K&H Construction" },
+      { name: "description", content: "Home Improvement
+New York 📍
+☞Free estimates
+☞ Licensed
+☞ Remodeling & renovations
+☞ Residential & commercial" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "K&H Construction" },
+      { property: "og:description", content: "Home Improvement
+New York 📍
+☞Free estimates
+☞ Licensed
+☞ Remodeling & renovations
+☞ Residential & commercial" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "K&H Construction" },
+      { name: "twitter:description", content: "Home Improvement
+New York 📍
+☞Free estimates
+☞ Licensed
+☞ Remodeling & renovations
+☞ Residential & commercial" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/1f6251e6-7766-4225-b67f-5c64fe260eb2" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/1f6251e6-7766-4225-b67f-5c64fe260eb2" },
     ],
     links: [
       {
