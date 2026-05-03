@@ -1,10 +1,6 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
-import type { ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-
-const siteDescription =
-  "Home Improvement New York 📍 ☞ Free estimates ☞ Licensed ☞ Remodeling & renovations ☞ Residential & commercial";
 
 function NotFoundComponent() {
   return (
@@ -34,13 +30,32 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "K&H Construction" },
-      { name: "description", content: siteDescription },
+      { name: "description", content: "Home Improvement
+New York 📍
+☞Free estimates
+☞ Licensed
+☞ Remodeling & renovations
+☞ Residential & commercial" },
+      { name: "author", content: "Lovable" },
       { property: "og:title", content: "K&H Construction" },
-      { property: "og:description", content: siteDescription },
+      { property: "og:description", content: "Home Improvement
+New York 📍
+☞Free estimates
+☞ Licensed
+☞ Remodeling & renovations
+☞ Residential & commercial" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "K&H Construction" },
-      { name: "twitter:description", content: siteDescription },
+      { name: "twitter:description", content: "Home Improvement
+New York 📍
+☞Free estimates
+☞ Licensed
+☞ Remodeling & renovations
+☞ Residential & commercial" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/1f6251e6-7766-4225-b67f-5c64fe260eb2" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/1f6251e6-7766-4225-b67f-5c64fe260eb2" },
     ],
     links: [
       {
@@ -54,7 +69,7 @@ export const Route = createRootRoute({
   notFoundComponent: NotFoundComponent,
 });
 
-function RootShell({ children }: { children: ReactNode }) {
+function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
