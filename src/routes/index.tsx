@@ -19,6 +19,8 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:title", content: "K&H Construction — Brooklyn, NY" },
       { property: "og:description", content: "Quality you can stand on. Brooklyn's trusted remodelers since day one." },
+      { property: "og:image", content: hero },
+      { name: "twitter:image", content: hero },
     ],
   }),
 });
