@@ -11,7 +11,10 @@ export default defineConfig({
     server: {
       host: "0.0.0.0",
       port: 3000,
-      allowedHosts: "all",
+      allowedHosts: [
+        "lianne-agronomical-aden.ngrok-free.dev",
+        "584bde69-87d9-49af-95f0-19d4311730ef-00-3bn85z493rndj.kirk.replit.dev",
+      ],
     },
   },
 });
